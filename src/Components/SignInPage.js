@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { auth } from '../firebaseConfig';
+import auth from '../firebaseConfig'; // Use default import
 
 function SignInPage() {
     const [email, setEmail] = useState('');
@@ -36,7 +36,7 @@ function SignInPage() {
                 onChange={ (e) => setPassword(e.target.value)}
                 />
                 <button type='submit'>Sign In</button>
-                {error && <p style={{ color: 'red'}}>{error}</p>}
+            {error && <p style={{ color: 'red'}}>{error}</p>}
                 { successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
             </form>
         </div>

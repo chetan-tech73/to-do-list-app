@@ -1,20 +1,20 @@
 import React from 'react';
-import { link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header(){
     return(
-        <Header>
+        <header>
             <nav>
                 <ul>
                     <li>
-                        <link to='/signin'>Sign In</link>
+                        <Link to="/signin">Sign In</Link>
                     </li>
                     <li>
-                        <link to='/signup'>Sign Up</link>
+                        <Link to="/signup">Sign Up</Link>
                     </li>
                 </ul>
             </nav>
-        </Header>
+        </header>
     );
 }
 
